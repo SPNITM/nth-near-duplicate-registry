@@ -1,0 +1,8 @@
+{
+  "attack": "adaptive score-query coordinate search on the canonical 8x8 luminance preprocessing grid",
+  "test_identities": 159,
+  "radius": 4,
+  "passes": 2,
+  "seed": 20260901,
+  "limitation": "Preprocessing-domain diagnostic non-gradient attack; it is not an optimal, source-pixel, or certified adversarial bound."
+}

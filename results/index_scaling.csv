@@ -1,0 +1,5 @@
+index_size,queries,radius,mean_lookup_ms,p95_lookup_ms,mean_shortlist,p95_shortlist,index_bytes,method
+1000,50,16,0.042234,0.04459999999999999,0.0,0.0,8000,vectorized exact scan
+10000,50,16,0.272466,0.33319499999999985,0.3,2.0,80000,vectorized exact scan
+100000,50,16,3.582304,4.365105,3.3,6.549999999999997,800000,vectorized exact scan
+1000000,50,16,38.460907999999996,39.83595,39.18,49.55,8000000,vectorized exact scan

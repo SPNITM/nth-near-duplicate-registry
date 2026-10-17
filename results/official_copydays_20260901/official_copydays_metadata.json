@@ -1,0 +1,79 @@
+{
+  "benchmark": "INRIA Copydays",
+  "evaluation_subset": "157 original references and 229 strong queries",
+  "optional_distractors_included": false,
+  "labels_used_for_calibration": false,
+  "policy_source": "private-main calibration split, frozen before Copydays evaluation",
+  "official_homepage": "https://lear.inrialpes.fr/~jegou/data.php.html#copydays",
+  "download_mirror": "https://dl.fbaipublicfiles.com/vissl/datasets/",
+  "copyright_notice": "INRIA is the copyright holder; images are not included in the public release.",
+  "original_archive_sha256": "8b85b7914fd0145bc258bde3440f6a622243ca91ee085fe2025ce7bdeb0bfb8e",
+  "strong_archive_sha256": "7852c64aa4a37e8329ce08159fc947c16f09c66737db0a2479a90fc9ae40760c",
+  "original_count": 157,
+  "strong_query_count": 229,
+  "model": "shufflenet_v2_x1",
+  "weights": "ShuffleNet_V2_X1_0_Weights.IMAGENET1K_V1",
+  "device": "cpu",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.13.0+cpu",
+  "cuda": null,
+  "deep_retrieval": {
+    "top1_retrieval_accuracy": 0.7030567685589519,
+    "recall_at_5": 0.868995633187773,
+    "mean_reciprocal_rank": 0.7769746370208374,
+    "mean_average_precision": 0.7769746370208374,
+    "median_true_rank": 1.0,
+    "maximum_true_rank": 87
+  },
+  "nth_retrieval": {
+    "top1_retrieval_accuracy": 0.17903930131004367,
+    "recall_at_5": 0.31004366812227074,
+    "mean_reciprocal_rank": 0.2480970884200708,
+    "mean_average_precision": 0.2480970884200708,
+    "median_true_rank": 22.0,
+    "maximum_true_rank": 156
+  },
+  "hash_retrieval_baselines": {
+    "NTH-default": {
+      "top1_retrieval_accuracy": 0.17903930131004367,
+      "recall_at_5": 0.31004366812227074,
+      "mean_reciprocal_rank": 0.2480970884200708,
+      "mean_average_precision": 0.2480970884200708,
+      "median_true_rank": 22.0,
+      "maximum_true_rank": 156
+    },
+    "aHash": {
+      "top1_retrieval_accuracy": 0.22707423580786026,
+      "recall_at_5": 0.34497816593886466,
+      "mean_reciprocal_rank": 0.29521157343568455,
+      "mean_average_precision": 0.29521157343568455,
+      "median_true_rank": 16.0,
+      "maximum_true_rank": 155
+    },
+    "dHash": {
+      "top1_retrieval_accuracy": 0.2052401746724891,
+      "recall_at_5": 0.2663755458515284,
+      "mean_reciprocal_rank": 0.2519868661914502,
+      "mean_average_precision": 0.2519868661914502,
+      "median_true_rank": 32.0,
+      "maximum_true_rank": 157
+    },
+    "pHash": {
+      "top1_retrieval_accuracy": 0.1965065502183406,
+      "recall_at_5": 0.30131004366812225,
+      "mean_reciprocal_rank": 0.2516045244099317,
+      "mean_average_precision": 0.2516045244099317,
+      "median_true_rank": 35.0,
+      "maximum_true_rank": 156
+    },
+    "wHash-Haar": {
+      "top1_retrieval_accuracy": 0.2314410480349345,
+      "recall_at_5": 0.3231441048034934,
+      "mean_reciprocal_rank": 0.2930095651587414,
+      "mean_average_precision": 0.2930095651587414,
+      "median_true_rank": 18.0,
+      "maximum_true_rank": 157
+    }
+  }
+}

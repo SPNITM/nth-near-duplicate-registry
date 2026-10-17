@@ -1,0 +1,169 @@
+dataset,policy,Label,n,recall
+COCO seed subset,ShuffleNet only,blur,63,1.0
+COCO seed subset,ShuffleNet only,blur_colorjitter,67,1.0
+COCO seed subset,ShuffleNet only,blur_crop,64,1.0
+COCO seed subset,ShuffleNet only,blur_jpeg,36,1.0
+COCO seed subset,ShuffleNet only,blur_noise,71,0.9577464788732394
+COCO seed subset,ShuffleNet only,blur_rotate,69,0.8260869565217391
+COCO seed subset,ShuffleNet only,blur_sharpen,70,1.0
+COCO seed subset,ShuffleNet only,colorjitter,71,1.0
+COCO seed subset,ShuffleNet only,colorjitter_crop,68,1.0
+COCO seed subset,ShuffleNet only,colorjitter_jpeg,50,1.0
+COCO seed subset,ShuffleNet only,colorjitter_noise,70,1.0
+COCO seed subset,ShuffleNet only,crop,69,1.0
+COCO seed subset,ShuffleNet only,crop_noise,70,0.9714285714285714
+COCO seed subset,ShuffleNet only,jpeg,55,1.0
+COCO seed subset,ShuffleNet only,jpeg_crop,64,0.984375
+COCO seed subset,ShuffleNet only,jpeg_noise,70,1.0
+COCO seed subset,ShuffleNet only,noise,71,1.0
+COCO seed subset,ShuffleNet only,rotate,67,0.8955223880597015
+COCO seed subset,ShuffleNet only,rotate_colorjitter,68,0.9411764705882353
+COCO seed subset,ShuffleNet only,rotate_crop,69,0.8840579710144928
+COCO seed subset,ShuffleNet only,rotate_jpeg,49,0.8775510204081632
+COCO seed subset,ShuffleNet only,rotate_noise,70,0.7714285714285715
+COCO seed subset,ShuffleNet only,rotate_sharpen,70,0.8571428571428571
+COCO seed subset,ShuffleNet only,sharpen,70,1.0
+COCO seed subset,ShuffleNet only,sharpen_colorjitter,71,1.0
+COCO seed subset,ShuffleNet only,sharpen_crop,69,0.9855072463768116
+COCO seed subset,ShuffleNet only,sharpen_jpeg,63,1.0
+COCO seed subset,ShuffleNet only,sharpen_noise,70,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,blur,63,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,blur_colorjitter,67,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,blur_crop,64,0.828125
+COCO seed subset,NTH r=12 + ShuffleNet,blur_jpeg,36,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,blur_noise,71,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,blur_rotate,69,0.5072463768115942
+COCO seed subset,NTH r=12 + ShuffleNet,blur_sharpen,70,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,colorjitter,71,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,colorjitter_crop,68,0.7941176470588235
+COCO seed subset,NTH r=12 + ShuffleNet,colorjitter_jpeg,50,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,colorjitter_noise,70,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,crop,69,0.782608695652174
+COCO seed subset,NTH r=12 + ShuffleNet,crop_noise,70,0.8
+COCO seed subset,NTH r=12 + ShuffleNet,jpeg,55,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,jpeg_crop,64,0.765625
+COCO seed subset,NTH r=12 + ShuffleNet,jpeg_noise,70,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,noise,71,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,rotate,67,0.4925373134328358
+COCO seed subset,NTH r=12 + ShuffleNet,rotate_colorjitter,68,0.5882352941176471
+COCO seed subset,NTH r=12 + ShuffleNet,rotate_crop,69,0.4492753623188406
+COCO seed subset,NTH r=12 + ShuffleNet,rotate_jpeg,49,0.4897959183673469
+COCO seed subset,NTH r=12 + ShuffleNet,rotate_noise,70,0.4142857142857143
+COCO seed subset,NTH r=12 + ShuffleNet,rotate_sharpen,70,0.38571428571428573
+COCO seed subset,NTH r=12 + ShuffleNet,sharpen,70,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,sharpen_colorjitter,71,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,sharpen_crop,69,0.7971014492753623
+COCO seed subset,NTH r=12 + ShuffleNet,sharpen_jpeg,63,1.0
+COCO seed subset,NTH r=12 + ShuffleNet,sharpen_noise,70,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,blur,63,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,blur_colorjitter,67,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,blur_crop,64,0.9375
+COCO seed subset,NTH r=16 + ShuffleNet,blur_jpeg,36,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,blur_noise,71,0.9859154929577465
+COCO seed subset,NTH r=16 + ShuffleNet,blur_rotate,69,0.7246376811594203
+COCO seed subset,NTH r=16 + ShuffleNet,blur_sharpen,70,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,colorjitter,71,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,colorjitter_crop,68,0.9558823529411765
+COCO seed subset,NTH r=16 + ShuffleNet,colorjitter_jpeg,50,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,colorjitter_noise,70,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,crop,69,0.8840579710144928
+COCO seed subset,NTH r=16 + ShuffleNet,crop_noise,70,0.9142857142857143
+COCO seed subset,NTH r=16 + ShuffleNet,jpeg,55,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,jpeg_crop,64,0.8125
+COCO seed subset,NTH r=16 + ShuffleNet,jpeg_noise,70,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,noise,71,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,rotate,67,0.6119402985074627
+COCO seed subset,NTH r=16 + ShuffleNet,rotate_colorjitter,68,0.75
+COCO seed subset,NTH r=16 + ShuffleNet,rotate_crop,69,0.6086956521739131
+COCO seed subset,NTH r=16 + ShuffleNet,rotate_jpeg,49,0.6530612244897959
+COCO seed subset,NTH r=16 + ShuffleNet,rotate_noise,70,0.5285714285714286
+COCO seed subset,NTH r=16 + ShuffleNet,rotate_sharpen,70,0.5857142857142857
+COCO seed subset,NTH r=16 + ShuffleNet,sharpen,70,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,sharpen_colorjitter,71,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,sharpen_crop,69,0.8985507246376812
+COCO seed subset,NTH r=16 + ShuffleNet,sharpen_jpeg,63,1.0
+COCO seed subset,NTH r=16 + ShuffleNet,sharpen_noise,70,1.0
+Copydays seed subset,ShuffleNet only,blur,32,1.0
+Copydays seed subset,ShuffleNet only,blur_colorjitter,32,1.0
+Copydays seed subset,ShuffleNet only,blur_crop,32,1.0
+Copydays seed subset,ShuffleNet only,blur_jpeg,28,1.0
+Copydays seed subset,ShuffleNet only,blur_noise,32,1.0
+Copydays seed subset,ShuffleNet only,blur_rotate,32,0.875
+Copydays seed subset,ShuffleNet only,blur_sharpen,32,1.0
+Copydays seed subset,ShuffleNet only,colorjitter,32,1.0
+Copydays seed subset,ShuffleNet only,colorjitter_crop,32,1.0
+Copydays seed subset,ShuffleNet only,colorjitter_jpeg,28,1.0
+Copydays seed subset,ShuffleNet only,colorjitter_noise,31,1.0
+Copydays seed subset,ShuffleNet only,crop,32,1.0
+Copydays seed subset,ShuffleNet only,crop_noise,31,1.0
+Copydays seed subset,ShuffleNet only,jpeg,30,1.0
+Copydays seed subset,ShuffleNet only,jpeg_crop,29,1.0
+Copydays seed subset,ShuffleNet only,jpeg_noise,32,1.0
+Copydays seed subset,ShuffleNet only,noise,32,1.0
+Copydays seed subset,ShuffleNet only,rotate,32,0.875
+Copydays seed subset,ShuffleNet only,rotate_colorjitter,32,0.90625
+Copydays seed subset,ShuffleNet only,rotate_crop,32,0.875
+Copydays seed subset,ShuffleNet only,rotate_jpeg,30,0.8666666666666667
+Copydays seed subset,ShuffleNet only,rotate_noise,32,0.8125
+Copydays seed subset,ShuffleNet only,rotate_sharpen,32,0.9375
+Copydays seed subset,ShuffleNet only,sharpen,32,1.0
+Copydays seed subset,ShuffleNet only,sharpen_colorjitter,32,1.0
+Copydays seed subset,ShuffleNet only,sharpen_crop,32,1.0
+Copydays seed subset,ShuffleNet only,sharpen_jpeg,32,1.0
+Copydays seed subset,ShuffleNet only,sharpen_noise,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,blur,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,blur_colorjitter,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,blur_crop,32,0.90625
+Copydays seed subset,NTH r=12 + ShuffleNet,blur_jpeg,28,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,blur_noise,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,blur_rotate,32,0.65625
+Copydays seed subset,NTH r=12 + ShuffleNet,blur_sharpen,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,colorjitter,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,colorjitter_crop,32,0.9375
+Copydays seed subset,NTH r=12 + ShuffleNet,colorjitter_jpeg,28,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,colorjitter_noise,31,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,crop,32,0.84375
+Copydays seed subset,NTH r=12 + ShuffleNet,crop_noise,31,0.8709677419354839
+Copydays seed subset,NTH r=12 + ShuffleNet,jpeg,30,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,jpeg_crop,29,0.8620689655172413
+Copydays seed subset,NTH r=12 + ShuffleNet,jpeg_noise,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,noise,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,rotate,32,0.53125
+Copydays seed subset,NTH r=12 + ShuffleNet,rotate_colorjitter,32,0.5625
+Copydays seed subset,NTH r=12 + ShuffleNet,rotate_crop,32,0.40625
+Copydays seed subset,NTH r=12 + ShuffleNet,rotate_jpeg,30,0.6666666666666666
+Copydays seed subset,NTH r=12 + ShuffleNet,rotate_noise,32,0.5625
+Copydays seed subset,NTH r=12 + ShuffleNet,rotate_sharpen,32,0.5
+Copydays seed subset,NTH r=12 + ShuffleNet,sharpen,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,sharpen_colorjitter,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,sharpen_crop,32,0.90625
+Copydays seed subset,NTH r=12 + ShuffleNet,sharpen_jpeg,32,1.0
+Copydays seed subset,NTH r=12 + ShuffleNet,sharpen_noise,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,blur,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,blur_colorjitter,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,blur_crop,32,0.96875
+Copydays seed subset,NTH r=16 + ShuffleNet,blur_jpeg,28,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,blur_noise,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,blur_rotate,32,0.75
+Copydays seed subset,NTH r=16 + ShuffleNet,blur_sharpen,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,colorjitter,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,colorjitter_crop,32,0.96875
+Copydays seed subset,NTH r=16 + ShuffleNet,colorjitter_jpeg,28,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,colorjitter_noise,31,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,crop,32,0.96875
+Copydays seed subset,NTH r=16 + ShuffleNet,crop_noise,31,0.967741935483871
+Copydays seed subset,NTH r=16 + ShuffleNet,jpeg,30,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,jpeg_crop,29,0.9655172413793104
+Copydays seed subset,NTH r=16 + ShuffleNet,jpeg_noise,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,noise,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,rotate,32,0.71875
+Copydays seed subset,NTH r=16 + ShuffleNet,rotate_colorjitter,32,0.78125
+Copydays seed subset,NTH r=16 + ShuffleNet,rotate_crop,32,0.65625
+Copydays seed subset,NTH r=16 + ShuffleNet,rotate_jpeg,30,0.7666666666666667
+Copydays seed subset,NTH r=16 + ShuffleNet,rotate_noise,32,0.65625
+Copydays seed subset,NTH r=16 + ShuffleNet,rotate_sharpen,32,0.71875
+Copydays seed subset,NTH r=16 + ShuffleNet,sharpen,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,sharpen_colorjitter,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,sharpen_crop,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,sharpen_jpeg,32,1.0
+Copydays seed subset,NTH r=16 + ShuffleNet,sharpen_noise,32,1.0

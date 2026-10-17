@@ -1,0 +1,58 @@
+#!/bin/bash
+#PBS -N nth_full_cpu
+#PBS -q workq
+#PBS -l select=1:ncpus=16:mem=32gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+#PBS -o <HPC_PROJECT_ROOT>/results/hpc_full_main_20260831/pbs_full_main_selected_model.log
+
+set -euo pipefail
+
+project=<HPC_PROJECT_ROOT>
+manifest="$project/data/manifests_hpc_full_main_20260831/pair_manifest_main.csv"
+result_dir="$project/results/hpc_full_main_20260831"
+embedding_dir="$result_dir/raw_embeddings"
+
+source <HPC_HOME>/anaconda3/etc/profile.d/conda.sh
+conda activate base
+cd "$project"
+
+export OMP_NUM_THREADS="${NCPUS:-16}"
+export MKL_NUM_THREADS="${NCPUS:-16}"
+
+printf 'job_id=%s\n' "${PBS_JOBID:-interactive}"
+printf 'host=%s\n' "$(hostname)"
+printf 'started=%s\n' "$(date -Is)"
+
+python code/scripts/run_deep_baselines.py \
+  --manifest "$manifest" \
+  --model shufflenet_v2_x1 \
+  --batch-size 64 \
+  --device cpu \
+  --include-train \
+  --output "$embedding_dir"
+
+python code/scripts/evaluate_deep_baselines.py \
+  --manifest "$manifest" \
+  --embedding-dir "$embedding_dir" \
+  --output "$result_dir/deep_baseline_results.csv"
+
+python code/scripts/run_two_stage_evaluation.py \
+  --manifest "$manifest" \
+  --hash-cache "$result_dir/cache/classical_hashes.pkl" \
+  --embedding-dir "$embedding_dir" \
+  --embedding-model shufflenet_v2_x1 \
+  --output-prefix hpc_full_main_20260831/two_stage_shufflenet
+
+sha256sum \
+  "$embedding_dir/shufflenet_v2_x1.npy" \
+  "$embedding_dir/shufflenet_v2_x1_paths.csv" \
+  "$embedding_dir/shufflenet_v2_x1_metadata.json" \
+  "$embedding_dir/shufflenet_v2_x1_pair_predictions.csv" \
+  "$result_dir/deep_baseline_results.csv" \
+  "$result_dir/two_stage_shufflenet_pair_results.csv" \
+  "$result_dir/two_stage_shufflenet_registry_results.csv" \
+  "$result_dir/two_stage_shufflenet_fixed_gate_curves.csv" \
+  > "$result_dir/full_main_selected_model.sha256"
+
+printf 'completed=%s\n' "$(date -Is)"

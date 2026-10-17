@@ -1,0 +1,53 @@
+{
+  "project_seed": 20260830,
+  "split_counts": {
+    "train": 745,
+    "calibration": 160,
+    "test": 159
+  },
+  "datasets": [
+    {
+      "dataset": "main",
+      "status": "audited",
+      "pair_csv": "image_pairs_table.csv",
+      "rows": 91504,
+      "positive_rows": 29792,
+      "negative_rows": 61712,
+      "unique_seed_ids": 1064,
+      "missing_original_references": 0,
+      "missing_transformed_references": 0,
+      "missing_positive_transforms": 0,
+      "usable_positive_rows": 29792,
+      "usable_negative_rows": 61712
+    },
+    {
+      "dataset": "coco",
+      "pair_csv": "coco_image_pairs_table.csv",
+      "rows": 13760,
+      "positive_rows": 4480,
+      "negative_rows": 9280,
+      "unique_seed_ids": 160,
+      "missing_original_references": 0,
+      "missing_transformed_references": 7948,
+      "missing_positive_transforms": 2646,
+      "usable_positive_rows": 1834,
+      "usable_negative_rows": 3978
+    },
+    {
+      "dataset": "copydays",
+      "pair_csv": "copy_image_pairs_table.csv",
+      "rows": 12200,
+      "positive_rows": 3972,
+      "negative_rows": 8228,
+      "unique_seed_ids": 142,
+      "missing_original_references": 86,
+      "missing_transformed_references": 9401,
+      "missing_positive_transforms": 3093,
+      "usable_positive_rows": 879,
+      "usable_negative_rows": 1918
+    }
+  ],
+  "unavailable_datasets": [],
+  "datasets_with_unresolved_references": [],
+  "warning": "The private main corpus was fully resolved on the HPC. COCO/Copydays entries describe only the supplied renamed subsets and are not official benchmarks."
+}

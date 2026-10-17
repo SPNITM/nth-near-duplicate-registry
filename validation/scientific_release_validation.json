@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "checks": {
+    "required_files": {
+      "passed": true,
+      "missing": []
+    },
+    "manuscript": {
+      "passed": true,
+      "citation_count": 18,
+      "bibliography_entry_count": 18,
+      "missing_citation_keys": [],
+      "figure_count": 4,
+      "missing_figures": [],
+      "obsolete_claims": []
+    },
+    "reviewer_comment_inventory": {
+      "passed": true,
+      "comment_count": 48,
+      "distribution": {
+        "R1": 12,
+        "R2": 5,
+        "R3": 7,
+        "R4": 5,
+        "R5": 4,
+        "R6": 10,
+        "R7": 5
+      },
+      "expected_distribution": {
+        "R1": 12,
+        "R2": 5,
+        "R3": 7,
+        "R4": 5,
+        "R5": 4,
+        "R6": 10,
+        "R7": 5
+      }
+    },
+    "full_main_verification": {
+      "passed": true,
+      "audit": {
+        "rows": 91504,
+        "positive_rows": 29792,
+        "negative_rows": 61712,
+        "unique_seed_ids": 1064,
+        "missing_original_references": 0,
+        "missing_transformed_references": 0,
+        "missing_positive_transforms": 0
+      },
+      "selected_model_test_recall": 0.968104222821204,
+      "issues": []
+    },
+    "fixed_gate_curves": {
+      "passed": true,
+      "radii": [
+        2,
+        4,
+        8,
+        12,
+        16
+      ],
+      "terminal_points": {
+        "2": {
+          "fpr": 4.4923629829290206e-05,
+          "tpr": 0.5909703504043127
+        },
+        "4": {
+          "fpr": 0.0007637017070979335,
+          "tpr": 0.6547619047619048
+        },
+        "8": {
+          "fpr": 0.006648697214734951,
+          "tpr": 0.7825696316262354
+        },
+        "12": {
+          "fpr": 0.028751123090745734,
+          "tpr": 0.8641060197663971
+        },
+        "16": {
+          "fpr": 0.07771787960467205,
+          "tpr": 0.9204851752021563
+        }
+      },
+      "issues": []
+    },
+    "raw_prediction_precision": {
+      "passed": true,
+      "models_checked": 18,
+      "issues": []
+    },
+    "audit_chain": {
+      "passed": true,
+      "record_count": 1,
+      "head": "703295f1e3ae1b92fc0eed05ddcff27fcc6d5c2cc63c3a28b6ef4d9ff790c569"
+    },
+    "throughput_and_config": {
+      "passed": true,
+      "selected_model_batches": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "missing_config_models": []
+    },
+    "revision_additions": {
+      "passed": true,
+      "official_copydays_queries": 229,
+      "adaptive_budgets": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "multiview_ratios": 4,
+      "hpc_batches": [
+        1,
+        8,
+        32,
+        64
+      ],
+      "provenance_seed_count": 1064,
+      "issues": []
+    },
+    "unit_tests": {
+      "passed": true,
+      "returncode": 0,
+      "output": "----------------------------------------------------------------------\nRan 13 tests in 0.060s\n\nOK"
+    },
+    "public_release": {
+      "passed": true,
+      "checked_files": 138,
+      "checksum_entries": 137,
+      "zip_members": 138,
+      "zip_sha256": "f4d484654da21a6823c692ffcce583b20b8bb787c6ed7b54ff9e4841ee37aaa9",
+      "issues": []
+    }
+  }
+}

@@ -1,0 +1,3 @@
+component,file_count,source_home,archive_mirror,archive_sha256,rights_note
+Copydays original references,157,https://lear.inrialpes.fr/~jegou/data.php.html#copydays,https://dl.fbaipublicfiles.com/vissl/datasets/copydays_original.tar.gz,8B85B7914FD0145BC258BDE3440F6A622243CA91EE085FE2025CE7BDEB0BFB8E,Copyright INRIA; used locally for evaluation and not redistributed.
+Copydays strong queries,229,https://lear.inrialpes.fr/~jegou/data.php.html#copydays,https://dl.fbaipublicfiles.com/vissl/datasets/copydays_strong.tar.gz,7852C64AA4A37E8329CE08159FC947C16F09C66737DB0A2479A90FC9AE40760C,Copyright INRIA; used locally for evaluation and not redistributed.

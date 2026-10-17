@@ -1,0 +1,19 @@
+{
+  "main_seed_files": 1064,
+  "main_notebook_mappings": 1064,
+  "main_mapping_missing": 0,
+  "source_family_counts": {
+    "filename resembles a YouTube video identifier": 230,
+    "numbered PNG series": 210,
+    "bike BMP series": 220,
+    "cat JPG series": 202,
+    "other historical filename": 202
+  },
+  "confirmed_source_urls": 0,
+  "confirmed_licences": 0,
+  "redistributable_seed_files": 0,
+  "coco_notebook_mappings": 160,
+  "copydays_official_originals": 157,
+  "copydays_official_strong_queries": 229,
+  "conclusion": "All main rename mappings were recovered, but source URLs and licences remain author-controlled evidence fields; main seed images must not be redistributed yet."
+}

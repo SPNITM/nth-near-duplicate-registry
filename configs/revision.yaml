@@ -1,0 +1,30 @@
+project_seed: 20260830
+split:
+  train: 745
+  calibration: 160
+  test: 159
+nth:
+  version: nth-v2-exclude-center
+  grid_size: 8
+  window_size: 3
+  padding: wrap
+  include_center: false
+  threshold: global_mean
+  interpolation: lanczos
+evaluation:
+  target_pair_fpr: 0.001
+  radii: [2, 4, 8, 12, 16, 20]
+  registry_sizes: [1000, 10000, 100000, 1000000]
+  bootstrap_replicates: 2000
+  independent_training_runs: 5
+deep_baselines:
+  - mobilenetv3_imagenet
+  - shufflenet_v2_x1
+  - efficientnet_b0
+  - mobilenetv3_contrastive
+  - resnet50_imagenet
+  - clip_vit_b32
+  - dinov2_vits14
+security:
+  audit_hash: sha256
+  commitment_hash: keccak256

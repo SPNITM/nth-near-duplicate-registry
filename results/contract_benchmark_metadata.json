@@ -1,0 +1,10 @@
+{
+  "solc_version": "0.8.24",
+  "optimizer": true,
+  "optimizer_runs": 200,
+  "evm": "PyEVMBackend via eth-tester",
+  "chain": "deterministic local test chain; values are not mainnet fee quotes",
+  "python": "3.12.10",
+  "deployment_gas_used": 360358,
+  "contract_source_sha256": "6ccc7f108aa3421bdab1cb284674c8e0454bfc6e38fa14f18bc89e58f883e180"
+}

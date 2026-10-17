@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "package_directory": "D:\\NTH\\Scientific_Reports_Major_Revision\\submission\\Scientific_Reports_Complete_LaTeX_Package_20260910",
+  "zip_file": "D:\\NTH\\Scientific_Reports_Major_Revision\\submission\\Scientific_Reports_Complete_LaTeX_Package_20260910.zip",
+  "zip_sha256": "e954bccd922b16ef861cb9df5e82f03f1da10aa0cc71d014dd432dec6a860c45",
+  "zip_size_bytes": 3550304,
+  "zip_members": 20,
+  "packaged_figures": 9,
+  "referenced_figures": [
+    "../figures/full_main_verification_summary.png",
+    "../figures/hash_registry_tradeoff.png",
+    "../figures/revised_system_architecture.png",
+    "../figures/stress_and_scaling.png"
+  ],
+  "missing_figure_references": [],
+  "clean_red_scientific_signature_parity": true,
+  "clean_brace_balance": [
+    0,
+    0
+  ],
+  "red_brace_balance": [
+    0,
+    0
+  ],
+  "red_highlighting_present": true,
+  "reproducibility_archive_included": true
+}

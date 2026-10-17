@@ -1,0 +1,28 @@
+{
+  "strategy": "six off-chain central-crop reference views per identity with a fallback comparison path",
+  "reference_ratios": [
+    0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "held_out_query_ratios": [
+    0.15,
+    0.25,
+    0.35,
+    0.45
+  ],
+  "test_identities": 159,
+  "on_chain_storage_change": "none; model/policy identifiers and audit head remain the only anchored decision artefacts",
+  "deep_threshold_from_main_calibration": 0.2213736176490783,
+  "two_stage_radius": 16,
+  "two_stage_threshold_from_main_calibration": 0.2362784147262573,
+  "weights": "ShuffleNet_V2_X1_0_Weights.IMAGENET1K_V1",
+  "device": "cpu",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.13.0+cpu",
+  "limitation": "Central-crop diagnostic only; not a general local-feature or geometric-alignment solution."
+}

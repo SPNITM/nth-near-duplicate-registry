@@ -1,0 +1,4 @@
+check,passed
+non-registrant anchor rejected,True
+duplicate commitment rejected,True
+zero CID hash rejected,True

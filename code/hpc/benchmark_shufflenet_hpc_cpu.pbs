@@ -1,0 +1,41 @@
+#!/bin/bash
+#PBS -N nth_embed_cpu
+#PBS -q workq
+#PBS -l select=1:ncpus=16:mem=24gb
+#PBS -l walltime=00:30:00
+#PBS -j oe
+#PBS -o <HPC_PROJECT_ROOT>/results/embedding_throughput_hpc_cpu.pbs.log
+
+set -euo pipefail
+
+project=<HPC_PROJECT_ROOT>
+output="$project/results/embedding_throughput_hpc_cpu.csv"
+run_metadata="$project/results/embedding_throughput_hpc_cpu.metadata.json"
+hardware="$project/results/embedding_throughput_hpc_cpu.hardware.txt"
+
+source <HPC_HOME>/anaconda3/etc/profile.d/conda.sh
+conda activate base
+cd "$project"
+
+{
+  printf 'job_id=%s\n' "${PBS_JOBID:-interactive}"
+  printf 'hostname=%s\n' "$(hostname)"
+  printf 'started=%s\n' "$(date -Is)"
+  lscpu
+} > "$hardware"
+
+export OMP_NUM_THREADS="${NCPUS:-16}"
+export MKL_NUM_THREADS="${NCPUS:-16}"
+
+python code/scripts/benchmark_embedding_throughput.py \
+  --device cpu \
+  --models shufflenetv2_x1_0 \
+  --image-dir <HPC_SOURCE_ROOT>/NTH_IMAGES_EDITED \
+  --platform-label "NIT Meghalaya HPC CPU node" \
+  --batch-sizes 1 8 32 64 \
+  --repetitions 10 \
+  --output "$output"
+
+printf 'completed=%s\n' "$(date -Is)" >> "$hardware"
+sha256sum "$output" "$run_metadata" "$hardware" \
+  > "$project/results/embedding_throughput_hpc_cpu.sha256"

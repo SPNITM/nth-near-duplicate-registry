@@ -1,0 +1,5 @@
+attack,linf_epsilon_8bit,images,evasion_rate,mean_max_distance,median_queries,mean_absolute_change_8bit,mean_changed_grid_cell_fraction
+adaptive-score-query-on-canonical-8x8-luminance-grid,1,159,0.0,0.29559748427672955,256.0,0.004618710691823899,0.004618710691823899
+adaptive-score-query-on-canonical-8x8-luminance-grid,2,159,0.006289308176100629,0.5849056603773585,256.0,0.018081761006289308,0.009040880503144654
+adaptive-score-query-on-canonical-8x8-luminance-grid,4,159,0.031446540880503145,1.1446540880503144,256.0,0.06878930817610063,0.017197327044025157
+adaptive-score-query-on-canonical-8x8-luminance-grid,8,159,0.1069182389937107,2.339622641509434,256.0,0.26749213836477986,0.033510220125786166

@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-31",
+  "login_host": "nitm-hpcs-master",
+  "authoritative_private_media": "<HPC_SOURCE_ROOT>/NTH_IMAGES_EDITED",
+  "versioned_working_directory": "<HPC_PROJECT_ROOT>",
+  "hpc_sync_archive_sha256": "0c8be2774b549873f9bd2260a495a618917c70344f7f4c86b4adac37e78b7da2",
+  "unit_tests_passed": 13,
+  "unit_tests_failed": 0,
+  "python_compileall_passed": true,
+  "main_corpus_audit": {
+    "pair_rows": 91504,
+    "positive_rows": 29792,
+    "negative_rows": 61712,
+    "seed_identities": 1064,
+    "unique_images": 30856,
+    "missing_original_references": 0,
+    "missing_transformed_references": 0,
+    "missing_positive_transforms": 0,
+    "manifest_sha256": "e1512a6eb2113f8d7c4a68aa71e79fb155522c9340875ae46a77fa96e5063436"
+  },
+  "selected_model_full_corpus_job": {
+    "pbs_job_id": "4081.nitm-hpcs-master",
+    "compute_host": "node001",
+    "device": "cpu",
+    "exit_status": 0,
+    "walltime": "00:06:02",
+    "peak_memory_kb": 1122848,
+    "python": "3.12.4",
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "model": "shufflenet_v2_x1",
+    "pretrained_weight_sha256": "5666bf0f80d1e7f8fb61f6a65742b9c27c37f3208c1f087cdcd7c1ec1aa8b848",
+    "test_recall": 0.968104222821204,
+    "test_fpr": 0.00035938903863432165,
+    "radius_16_end_to_end_recall": 0.9029649595687331,
+    "radius_16_mean_shortlist": 85.73113207547169,
+    "radius_16_any_false_match_probability": 0.19294699011680144,
+    "result_transfer_archive_sha256": "5676781f33f03d68fcee75aed04eda1ab2d27abde4ba86b5a3c9889359d451b5",
+    "checksums_verified_after_local_transfer": true
+  },
+  "accelerator_timing_observation": {
+    "compute_host": "node002",
+    "accelerator": "NVIDIA A100 80GB PCIe",
+    "throughput_benchmark_status": "not_run_due_to_multi_tenant_contention",
+    "observed_gpu_utilization_percent": 100,
+    "observed_gpu_memory_used_mib": 73715,
+    "observed_gpu_memory_total_mib": 81920,
+    "scientific_decision": "Do not report a latency result measured under unrelated concurrent accelerator workloads."
+  },
+  "preservation": {
+    "historical_nth_files_overwritten": false,
+    "active_user_notebook_job_modified_or_stopped": false,
+    "packages_installed": false,
+    "versioned_working_copy_used": true
+  }
+}

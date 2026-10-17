@@ -1,0 +1,2 @@
+comparison,best_frozen_model,projection_model,test_positive_pairs,best_frozen_only_correct,projection_only_correct,discordant_pairs,exact_two_sided_mcnemar_p,interpretation
+paired positive recognition at calibration-selected operating points,shufflenet_v2_x1,mobilenetv3_contrastive_fixed1.5_seed53,2696,173,51,224,1.021191332423165e-16,best frozen model has higher paired recall

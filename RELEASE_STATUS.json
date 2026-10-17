@@ -1,0 +1,26 @@
+{
+  "package_date": "2026-10-17",
+  "status": "validated GitHub upload candidate; author actions remain before publication",
+  "technical_validation": "passed",
+  "included": [
+    "source code, tests, HPC scripts, configurations and Solidity contract",
+    "sanitised manifests and provenance-evidence registers",
+    "aggregate results, benchmark metadata and nine figures",
+    "clean and red-highlighted final manuscript sources and bibliography",
+    "supplementary methods, environment locks and reproducibility documentation"
+  ],
+  "excluded": [
+    "private seed images and copyrighted benchmark images",
+    "credentials, private keys and local environment files",
+    "raw embeddings, model caches and checkpoints",
+    "journal decision letters, reviewer responses and cover letters",
+    "historical submissions and unrelated files"
+  ],
+  "required_author_actions": [
+    "select software and derived-data licences",
+    "confirm author/citation metadata",
+    "insert the public GitHub URL",
+    "publish a versioned DOI and replace manuscript DOI placeholders",
+    "confirm that no unlicensed media are added to the public repository"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "weights": {
+    "mobilenetv3_large": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+    "shufflenetv2_x1_0": "ShuffleNet_V2_X1_0_Weights.IMAGENET1K_V1",
+    "efficientnet_b0": "EfficientNet_B0_Weights.IMAGENET1K_V1"
+  },
+  "device": "cpu",
+  "platform_label": "local-workstation-cpu",
+  "sample_count": 256,
+  "source": "data/manifests/pair_manifest_main.csv",
+  "warmup_batches": 3
+}

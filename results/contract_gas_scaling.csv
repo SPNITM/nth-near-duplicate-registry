@@ -1,0 +1,7 @@
+operation,registry_size_before,estimated_gas,actual_gas_used,status
+registerImage,0,184631,183076,1
+registerImage,1,184629,183076,1
+registerImage,10,184618,183064,1
+registerImage,100,184629,183076,1
+registerImage,1000,184629,183076,1
+anchorAuditHead,1001,36725,31905,1

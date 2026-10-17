@@ -1,0 +1,2 @@
+model,selection_rule,embedding_threshold,query_count,index_size,true_query_recall,per_query_any_false_match_probability,per_nonmatch_false_accept_rate,mean_accepted_candidates,p95_accepted_candidates,maximum_accepted_candidates,embedding_comparisons_per_query
+shufflenet_v2_x1,maximum calibration recall among frozen baselines at target pair FPR,0.2213736176490783,4452,1064,0.968104222821204,0.27583108715184185,0.0006772353414998829,1.6880053908355794,5.0,27,1064

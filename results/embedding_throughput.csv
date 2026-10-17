@@ -1,0 +1,5 @@
+model,device,batch_size,repetitions,median_batch_seconds,p95_batch_seconds,median_ms_per_image,throughput_images_per_second,torch_version,platform,logical_cpu_count
+MobileNetV3-Large ImageNet V2,cpu,1,10,0.0064816000000000006,0.0067879,6.4816,154.28289311281165,2.13.0+cpu,Windows-11-10.0.26200-SP0,28
+MobileNetV3-Large ImageNet V2,cpu,8,10,0.029308,0.0337621,3.6635,272.96301351166915,2.13.0+cpu,Windows-11-10.0.26200-SP0,28
+MobileNetV3-Large ImageNet V2,cpu,32,10,0.1808022,0.1866543,5.65006875,176.98899681530423,2.13.0+cpu,Windows-11-10.0.26200-SP0,28
+MobileNetV3-Large ImageNet V2,cpu,64,10,0.51296135,0.562902,8.01502109375,124.76573527420732,2.13.0+cpu,Windows-11-10.0.26200-SP0,28

@@ -1,0 +1,2 @@
+model,embedding_threshold,calibration_tp,calibration_fp,calibration_fn,calibration_tn,calibration_precision,calibration_recall,calibration_fpr,calibration_auc,calibration_ap,test_tp,test_fp,test_fn,test_tn,test_precision,test_recall,test_fpr,test_auc,test_ap
+shufflenet_v2_x1,0.22137361764907837,4332,22,148,22378,0.9949471750114837,0.9669642857142857,0.0009821428571428572,0.999651496731505,0.9984692388488969,4310,8,142,22252,0.9981472904122278,0.968104222821204,0.00035938903863432165,0.9997587120762629,0.9989789027996274

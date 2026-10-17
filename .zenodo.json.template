@@ -1,0 +1,29 @@
+{
+  "title": "Calibrated two-stage near-duplicate image registry reproducibility package",
+  "upload_type": "software",
+  "description": "Versioned code, sanitised manifests, aggregate results, figures and manuscript sources for the Scientific Reports revision.",
+  "creators": [
+    {
+      "name": "Pandey, Stuti"
+    },
+    {
+      "name": "Singh, Akhilendra Pratap"
+    },
+    {
+      "name": "Kushwaha, Dharmender Singh"
+    },
+    {
+      "name": "Pandey, Ashish"
+    }
+  ],
+  "access_right": "open",
+  "license": "AUTHOR_TO_SELECT",
+  "keywords": [
+    "near-duplicate detection",
+    "perceptual hashing",
+    "visual embeddings",
+    "blockchain provenance",
+    "reproducibility"
+  ],
+  "notes": "Do not publish until software/data licences, repository URL, author approval and media-exclusion review are complete."
+}

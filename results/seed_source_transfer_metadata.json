@@ -1,0 +1,5 @@
+{
+  "weights": "ShuffleNet_V2_X1_0_Weights.IMAGENET1K_V1",
+  "policy_source": "thresholds calibrated on the main calibration split only",
+  "limitation": "These are not official COCO or Copydays copy-detection protocols."
+}

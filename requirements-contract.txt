@@ -1,0 +1,4 @@
+-r requirements-core.txt
+py-solc-x==2.0.5
+web3==7.16.0
+eth-tester[py-evm]==0.14.0b1

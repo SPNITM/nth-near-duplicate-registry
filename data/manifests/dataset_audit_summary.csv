@@ -1,0 +1,4 @@
+dataset,status,pair_csv,rows,positive_rows,negative_rows,unique_seed_ids,missing_original_references,missing_transformed_references,missing_positive_transforms,usable_positive_rows,usable_negative_rows
+main,audited,image_pairs_table.csv,91504,29792,61712,1064,0,0,0,29792,61712
+coco,,coco_image_pairs_table.csv,13760,4480,9280,160,0,7948,2646,1834,3978
+copydays,,copy_image_pairs_table.csv,12200,3972,8228,142,86,9401,3093,879,1918

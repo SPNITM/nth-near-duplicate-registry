@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs,longtable,array}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\title{Supplementary Information: Calibrated Two-Stage Near-Duplicate Image Registration}
+\author{Stuti Pandey et al.}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{File-level data audit}
+
+The submitted main pair table contains 91,504 rows, comprising 29,792 declared positives and 61,712 declared negatives from 1,064 seed identities. Identity-aware path resolution against the authoritative HPC corpus located all 1,064 original images and every transformed reference: missing originals, missing transformed references and missing positive transforms are all zero. The earlier local-only audit was incomplete because \texttt{D:\textbackslash NTH\textbackslash NTH\_IMAGES\_EDITED} is only a partial mirror; corpus completeness is defined by \texttt{<HPC_HOME>/NTH/NTH\_IMAGES\_EDITED}. No absent file was imputed. The exact row-level decisions are in \texttt{data/manifests\_hpc\_full\_main\_20260831/pair\_manifest\_main.csv}; aggregate counts are in the adjacent \texttt{dataset\_audit\_summary.json}.
+
+The COCO-source table contains 13,760 rows from 160 seeds; 1,834 positive transforms were usable. The Copydays-source table contains 12,200 rows from 142 declared seeds; 879 positive transforms were usable and 86 original references were unresolved. These folders are renamed subsets with synthetic edits and are not the official benchmark protocols.
+
+Separately, the official INRIA Copydays archives were checksum-verified and evaluated without redistribution. The strong protocol contained 157 originals and 229 queries; optional distractors were not included and benchmark labels were not used for calibration. The private-main threshold was frozen before this transfer test. ShuffleNet top-1 retrieval was 0.7031 and recall at five was 0.8690, whereas true-match acceptance under the frozen threshold was 0.2402. The NTH radius-16 plus ShuffleNet policy accepted 0.1921 of true queries. These deliberately negative results are reported as domain-shift evidence, not as full Copydays-with-distractors performance.
+
+\section{Deterministic split and pair construction}
+
+Source identities are shuffled using NumPy generator seed 20260830 and assigned 745/160/159 identities to train/calibration/test. All derivatives of a source remain in its source split. Calibration and test positives are every usable positive derivative from the respective identities. For each positive, five different-content originals are sampled without replacement from the same split using the same fixed seed. The complete-corpus calibration evaluation has 4,480 positives and 22,400 negatives; the test evaluation has 4,452 positives and 22,260 negatives.
+
+\section{Canonical NTH configuration}
+
+\begin{longtable}{ll}
+\toprule
+Field & Value\\
+\midrule
+Version & \texttt{nth-v2-exclude-center}\\
+Colour conversion & PIL RGB to 8-bit grayscale\\
+Resize & $8\times8$, Lanczos antialiasing\\
+Neighbourhood & $3\times3$, centre excluded\\
+Padding & toroidal/wrap\\
+Threshold & global mean of 64 neighbourhood sums\\
+Comparison & greater than or equal\\
+Packing & row-major, 64 bits\\
+Distance & Hamming\\
+\bottomrule
+\end{longtable}
+
+The code exposes centre inclusion, reflect/edge/constant padding, global median, adaptive local mean, nearest/bilinear/bicubic interpolation and 12/16 grids as explicit ablations. A version identifier is included in the policy and contract record.
+
+\section{Calibration algorithm}
+
+For each method, unique negative calibration distances are sorted in ascending order. Counts are accumulated with ties intact. The largest observed threshold whose cumulative false-positive fraction is at most $10^{-3}$ is selected. If the smallest tied distance already exceeds the target, the threshold is placed immediately below it. The selected threshold is frozen before any test evaluation. This procedure avoids accepting only part of a tied discrete-distance group.
+
+For a fixed NTH radius, candidates rejected by NTH receive a score strictly below all embedding-passing scores. Therefore an embedding-threshold sweep cannot recover an NTH-rejected positive. Curve files for each fixed radius are stored in \texttt{results/two\_stage\_shufflenet\_fixed\_gate\_curves.csv}.
+
+\section{Deep representation settings}
+
+Frozen weights were loaded from torchvision, OpenCLIP and the official DINOv2 torch hub repository. The exact weight identifiers are recorded in per-model metadata JSON files. All output vectors are $\ell_2$ normalised. The five projection-head seeds are 11, 23, 37, 53 and 71. The head is $960\rightarrow512\rightarrow256$ with batch normalisation, ReLU and output normalisation. The source MobileNetV3 feature extractor is frozen. Early stopping monitors calibration average precision.
+
+The supervised 64-bit hash control is a $960\rightarrow256\rightarrow64$ tanh head trained for 20 epochs with a pairwise logistic objective, a quantisation penalty and a bit-balance penalty. Because the visual backbone is frozen, it is described only as a controlled deep-hash baseline.
+
+\section{Additional result files}
+
+The following machine-readable tables are part of the reproducibility package:
+\begin{itemize}
+\item \texttt{hash\_baseline\_calibrated\_results.csv}: all classical/NTH operating points;
+\item \texttt{hash\_per\_transform\_results.csv}: transform-level recall and distances;
+\item \texttt{hash\_registry\_tradeoff\_curves.csv}: all radii 0--64 for five 64-bit hashes;
+\item \texttt{deep\_frozen\_baseline\_summary.csv}: frozen-model metrics and cluster-bootstrap intervals;
+\item \texttt{projection\_training\_runs.csv}: ten independent projection runs;
+\item \texttt{supervised\_deep\_hash\_runs.csv}: five learned-binary runs;
+\item \texttt{two\_stage\_shufflenet\_pair\_results.csv}: fixed-radius pair outcomes;
+\item \texttt{two\_stage\_shufflenet\_registry\_results.csv}: registry-query outcomes;
+\item \texttt{nth\_crop\_ratio\_results.csv}: 0--50\% central-crop series;
+\item \texttt{nth\_bounded\_noise\_evasion\_summary.csv}: pixelwise and coherent perturbations;
+\item \texttt{nth\_adaptive\_coordinate\_evasion\_summary.csv}: adaptive score-query coordinate search on the post-Lanczos $8\times8$ NTH grid;
+\item \texttt{official\_copydays\_20260901/}: aggregate and query-level official strong-protocol results and archive checksums, excluding copyrighted images and raw embedding caches;
+\item \texttt{multiview\_crop\_mitigation\_20260901/}: single-view versus six-view off-chain crop mitigation and false-match trade-off;
+\item \texttt{index\_scaling.csv}: exact-scan timings to one million entries;
+\item \texttt{embedding\_throughput\_local\_cpu.csv}: selected and comparison-encoder CPU batch-size benchmark;
+\item \texttt{embedding\_throughput\_hpc\_cpu.csv}: selected-model batch benchmark on a 16-core Intel Xeon Gold 5320 allocation, with hardware record and checksums;
+\item \texttt{hpc\_verification\_20260831.json}: canonical HPC test/environment verification and the recorded reason an uncontended A100 timing was unavailable;
+\item \texttt{hpc\_full\_main\_20260831/full\_main\_verification\_summary.json}: complete-corpus file audit, selected-model intervals, hash baselines and fixed-gate registry outcomes with input checksums;
+\item \texttt{hpc\_full\_main\_20260831/deep\_registry\_results.csv}: complete-corpus deep-only registry-query outcome;
+\item \texttt{contract\_gas\_scaling.csv}: local-EVM gas at registry sizes 0--1,000.
+\end{itemize}
+
+\section{Registry-risk definitions}
+
+For query $q$ with true entry $y_q$, the true-entry event is $\widehat y_{q,y_q}=1$. The per-query false-match event is $\sum_{j\ne y_q}\widehat y_{qj}>0$. We report the empirical fraction of queries satisfying that event. The per-nonmatch false-accept rate divides the total false accepted entries by $Q(N-1)$. These are different quantities and both differ from the stage-one probability of returning any false candidate.
+
+\section{Audit-chain serialisation}
+
+Each stored row contains a timestamp, request identifier, probe digest, ordered candidate commitments, per-candidate NTH and embedding distances, matched commitment, NTH/model versions, thresholds, policy hash, decision, previous log head and derived record hash. The canonical record body excludes both the previous-head field and derived record hash. Keys are sorted and encoded as UTF-8 without insignificant whitespace. Interpreting the 64-character previous head as 32 raw digest bytes, the new head is
+\[
+ h_i=\mathrm{SHA256}(\mathrm{hexToBytes}(h_{i-1})\,\|\,\mathrm{canonicalJSON}(\mathrm{body}_i)).
+\]
+The contract permits only the original registrant to update the anchored head. This detects modification after anchoring; it does not prevent omission or falsification before anchoring.
+
+\section{Contract benchmark}
+
+\texttt{ImageRegistryV2.sol} was compiled with Solidity 0.8.24, optimisation enabled and 200 optimiser runs. A deterministic PyEVM chain measured deployment gas 360,358, registration gas 183,064--183,076, and audit-head update gas 31,905. Duplicate commitment, zero CID hash and non-registrant update checks reverted. Values are gas units for reproducibility, not cryptocurrency-price estimates.
+
+\section{Reproduction commands}
+
+From the revision root, install the pinned core/deep requirements in an isolated environment, then run the scripts in this order: build manifests; run hash study; extract deep baselines; evaluate baselines; train projection heads; train supervised deep hash; evaluate fixed-gate and registry queries; run crop/evasion, index, throughput and contract benchmarks; generate figures. Exact command examples and expected outputs are listed in \texttt{docs/REPRODUCIBILITY.md}.
+
+\section{Unresolved reproducibility constraints}
+
+The main transformed corpus is complete on the HPC, the official Copydays strong protocol has been evaluated, and workstation/server CPU timings are supplied. The remaining author-controlled constraints are: confirmation of source provenance and redistribution rights for the 1,064 private seeds; selection of software/data licences; publication to a DOI-assigning repository and insertion of the DOI; and all-author confirmation of declarations and contributions. A dedicated embedded accelerator was not available, so the paper makes no mobile-edge latency claim. These constraints remain visible in \texttt{docs/REVISION\_STATUS\_AND\_MISSING\_ITEMS.md} and the response.
+
+\end{document}

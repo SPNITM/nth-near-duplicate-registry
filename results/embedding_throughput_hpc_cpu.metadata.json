@@ -1,0 +1,10 @@
+{
+  "weights": {
+    "shufflenetv2_x1_0": "ShuffleNet_V2_X1_0_Weights.IMAGENET1K_V1"
+  },
+  "device": "cpu",
+  "platform_label": "NIT Meghalaya HPC CPU node",
+  "sample_count": 256,
+  "source": "<HPC_SOURCE_ROOT>/NTH_IMAGES_EDITED",
+  "warmup_batches": 3
+}

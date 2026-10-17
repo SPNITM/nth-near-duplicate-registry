@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "outputs": {
+    "clean_manuscript": "D:\\NTH\\Scientific_Reports_Major_Revision\\manuscript\\main_final_clean_20260910.tex",
+    "highlighted_manuscript": "D:\\NTH\\Scientific_Reports_Major_Revision\\manuscript\\main_final_highlighted_20260910.tex",
+    "response_docx": "D:\\NTH\\Scientific_Reports_Major_Revision\\response\\Response_to_Reviewers_Final_20260910.docx",
+    "response_tex": "D:\\NTH\\Scientific_Reports_Major_Revision\\response\\Response_to_Reviewers_Final_20260910.tex"
+  },
+  "sha256": {
+    "clean_manuscript": "b951649aaf665893f639b4c4cd369d48a1749bbfe93891044001fb7663d0d708",
+    "highlighted_manuscript": "474439888cfc120dacff4476dceb269a97c01ba46bc1852aa1214a03c6138fbc",
+    "response_docx": "3fd32936fb94cbcdac13e3ae11a8f58fdf5726157285e0deb6fa6cc9237f08b5",
+    "response_tex": "50660e5b386183430d51ae10767cecde3c218fd26ef985930ce2f5d715f6873d"
+  },
+  "tex_checks": {
+    "clean": {
+      "passed": true,
+      "brace_balance": 0,
+      "premature_closing_braces": 0,
+      "labels": 8,
+      "references": 8,
+      "missing_labels": [],
+      "figures": 4,
+      "missing_figures": [],
+      "repository_doi_placeholder_present": true
+    },
+    "highlighted": {
+      "passed": true,
+      "brace_balance": 0,
+      "premature_closing_braces": 0,
+      "labels": 8,
+      "references": 8,
+      "missing_labels": [],
+      "figures": 4,
+      "missing_figures": [],
+      "repository_doi_placeholder_present": true
+    },
+    "response": {
+      "passed": true,
+      "brace_balance": 0,
+      "premature_closing_braces": 0,
+      "labels": 0,
+      "references": 0,
+      "missing_labels": [],
+      "figures": 0,
+      "missing_figures": [],
+      "repository_doi_placeholder_present": false
+    }
+  },
+  "reviewer_comment_count": 48,
+  "reviewer_distribution": {
+    "R1": 12,
+    "R2": 5,
+    "R3": 7,
+    "R4": 5,
+    "R5": 4,
+    "R6": 10,
+    "R7": 5
+  },
+  "highlight_legend_present": true,
+  "highlight_trace_comments": 9
+}

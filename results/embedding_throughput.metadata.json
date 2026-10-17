@@ -1,0 +1,5 @@
+{
+  "weights": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+  "device": "cpu",
+  "sample_count": 256
+}
