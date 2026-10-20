@@ -1,6 +1,6 @@
 {
-  "package_date": "2026-10-17",
-  "status": "validated GitHub upload candidate; author actions remain before publication",
+  "package_date": "2026-10-20",
+  "status": "public GitHub working copy; corrected source-transfer results prepared locally; author actions remain before DOI release",
   "technical_validation": "passed",
   "included": [
     "source code, tests, HPC scripts, configurations and Solidity contract",
@@ -19,7 +19,7 @@
   "required_author_actions": [
     "select software and derived-data licences",
     "confirm author/citation metadata",
-    "insert the public GitHub URL",
+    "push the corrected source-transfer results and manuscript values",
     "publish a versioned DOI and replace manuscript DOI placeholders",
     "confirm that no unlicensed media are added to the public repository"
   ]

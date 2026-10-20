@@ -222,7 +222,7 @@ Fixed-gate ROC curves were generated separately for each radius on a logarithmic
 
 \subsection{Transfer, crop and bounded perturbations}
 
-Using thresholds selected only on the main calibration split, ShuffleNet-only recall was 0.9618 on 1,834 available COCO-source positives and 0.9693 on 879 Copydays-source positives. NTH $r=16$ plus ShuffleNet reached 0.8860 and 0.9238 respectively. Because the same synthetic edit generator was used and the supplied benchmark folders are incomplete, these numbers demonstrate only source-image transfer.
+Using thresholds selected only on the main calibration split, ShuffleNet-only recall was 0.9618 on 1,834 available COCO-source positives and 0.9693 on 879 Copydays-source positives. NTH $r=16$ plus ShuffleNet reached 0.8817 and 0.9158 respectively. Because the same synthetic edit generator was used and the supplied benchmark folders are incomplete, these numbers demonstrate only source-image transfer.
 
 The official Copydays evaluation produced materially lower transfer performance (Table~\ref{tab:copydays}). ShuffleNet ranked the correct original first for 0.7031 of strong queries and within the first five for 0.8690; mean reciprocal rank and mean average precision were both 0.7770 because each query has one relevant original. At the embedding threshold frozen on the private main calibration split, however, only 0.2402 of true matches were accepted. The NTH $r=16$ gate admitted the true identity for 0.4454 of queries and the complete two-stage policy accepted 0.1921. These negative results demonstrate domain shift and prevent a claim of benchmark-level generality.
 

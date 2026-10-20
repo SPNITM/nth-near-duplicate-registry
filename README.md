@@ -80,7 +80,7 @@ and [`PRE_UPLOAD_CHECKLIST.md`](PRE_UPLOAD_CHECKLIST.md).
 
 ## Citation, DOI and licence
 
-`CITATION.cff` and `.zenodo.json.template` are prepared, but the authors must insert the final public repository URL,
-select software and derived-data licences, create the version DOI, and replace the manuscript DOI placeholder before
-journal resubmission. Until a licence is selected, no reuse licence is granted. See
+`CITATION.cff` records the public repository URL, and `.zenodo.json.template` is prepared for deposition. The authors
+must still confirm the citation metadata, select software and derived-data licences, create the version DOI, and
+replace the manuscript DOI placeholder before journal resubmission. Until a licence is selected, no reuse licence is granted. See
 [`LICENSE_SELECTION_REQUIRED.md`](LICENSE_SELECTION_REQUIRED.md).

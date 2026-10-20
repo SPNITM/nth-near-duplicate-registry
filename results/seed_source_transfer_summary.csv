@@ -1,7 +1,7 @@
 dataset,evaluation_scope,policy,nth_radius,embedding_threshold_from_main_calibration,positive_pairs,negative_pairs,tp,fp,fn,tn,precision,recall,fpr
 COCO seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,ShuffleNet only,,0.2239850759506225,1834,9170,1764,0,70,9170,1.0,0.9618320610687023,0.0
-COCO seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=12 + ShuffleNet,12.0,0.2902461290359497,1834,9170,1508,1,326,9169,0.9993373094764745,0.822246455834242,0.00010905125408942203
-COCO seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=16 + ShuffleNet,16.0,0.2717729806900024,1834,9170,1625,1,209,9169,0.9993849938499385,0.886041439476554,0.00010905125408942203
+COCO seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=12 + ShuffleNet,12.0,0.2661914825439453,1834,9170,1504,1,330,9169,0.9993355481727575,0.8200654307524536,0.00010905125408942203
+COCO seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=16 + ShuffleNet,16.0,0.2362784147262573,1834,9170,1617,1,217,9169,0.9993819530284301,0.8816793893129771,0.00010905125408942203
 Copydays seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,ShuffleNet only,,0.2239850759506225,879,4395,852,3,27,4392,0.9964912280701754,0.9692832764505119,0.0006825938566552901
-Copydays seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=12 + ShuffleNet,12.0,0.2902461290359497,879,4395,759,1,120,4394,0.9986842105263158,0.863481228668942,0.00022753128555176336
-Copydays seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=16 + ShuffleNet,16.0,0.2717729806900024,879,4395,812,1,67,4394,0.998769987699877,0.9237770193401593,0.00022753128555176336
+Copydays seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=12 + ShuffleNet,12.0,0.2661914825439453,879,4395,758,0,121,4395,1.0,0.8623435722411832,0.0
+Copydays seed subset,available supplied files; synthetic edit protocol; not official benchmark protocol,NTH r=16 + ShuffleNet,16.0,0.2362784147262573,879,4395,805,0,74,4395,1.0,0.9158134243458476,0.0

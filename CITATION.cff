@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, cite the versioned repository DOI and the associated article."
 title: "Calibrated two-stage near-duplicate image registry reproducibility package"
 type: software
-version: 1.0.0-rc2
+version: 2.0.0
 authors:
   - family-names: Pandey
     given-names: Stuti
@@ -13,5 +13,5 @@ authors:
   - family-names: Pandey
     given-names: Ashish
     email: ashish.pandey@jaipur.manipal.edu
-repository-code: "AUTHOR_TO_INSERT_PUBLIC_REPOSITORY_URL"
+repository-code: "https://github.com/SPNITM/NTH-Near-Duplicate-Registry"
 doi: "AUTHOR_TO_INSERT_VERSION_DOI"

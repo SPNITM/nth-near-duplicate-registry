@@ -1,29 +1,6 @@
 {
   "passed": true,
-  "package_date": "2026-10-17",
-  "file_count_before_checksum": 137,
-  "suffix_counts": {
-    ".bib": 1,
-    ".cff": 1,
-    ".csv": 43,
-    ".example": 1,
-    ".json": 16,
-    ".log": 1,
-    ".md": 6,
-    ".mjs": 2,
-    ".pbs": 2,
-    ".png": 9,
-    ".py": 38,
-    ".sha256": 2,
-    ".sol": 1,
-    ".template": 1,
-    ".tex": 3,
-    ".toml": 1,
-    ".txt": 6,
-    ".yaml": 1,
-    ".yml": 1,
-    "[no suffix]": 1
-  },
+  "validation_date": "2026-10-20",
   "missing_required_files": [],
   "clean_highlighted_scientific_parity": true,
   "clean_brace_balance": [
@@ -34,65 +11,22 @@
     0,
     0
   ],
-  "bibliography_entries": 18,
-  "referenced_figures": [
-    "../figures/full_main_verification_summary.png",
-    "../figures/hash_registry_tradeoff.png",
-    "../figures/revised_system_architecture.png",
-    "../figures/stress_and_scaling.png"
-  ],
   "missing_figure_references": [],
-  "packaged_png_figures": 9,
   "forbidden_files": [],
   "sensitive_string_findings": [],
   "files_at_or_above_100_mib": [],
-  "largest_files": [
-    {
-      "file": "data/manifests/pair_manifest_main.csv",
-      "bytes": 13500763
-    },
-    {
-      "file": "results/two_stage_shufflenet_fixed_gate_curves.csv",
-      "bytes": 2038217
-    },
-    {
-      "file": "data/manifests/pair_manifest_coco.csv",
-      "bytes": 1545297
-    },
-    {
-      "file": "data/manifests/pair_manifest_copydays.csv",
-      "bytes": 1296922
-    },
-    {
-      "file": "figures/full_main_verification_summary.png",
-      "bytes": 311731
-    },
-    {
-      "file": "figures/stress_and_scaling.png",
-      "bytes": 284091
-    },
-    {
-      "file": "data/provenance_20260901/main_seed_provenance.csv",
-      "bytes": 271891
-    },
-    {
-      "file": "figures/revised_performance_summary.png",
-      "bytes": 227284
-    },
-    {
-      "file": "figures/hash_registry_tradeoff.png",
-      "bytes": 177932
-    },
-    {
-      "file": "figures/revised_system_architecture.png",
-      "bytes": 145480
-    }
-  ],
-  "expected_author_placeholders": {
-    "licence": true,
-    "repository_url": true,
-    "repository_doi": true
+  "source_transfer_thresholds_match_final_calibration": true,
+  "source_transfer_threshold_mismatches": [],
+  "source_transfer_r16_recall": {
+    "COCO seed subset": 0.8816793893129771,
+    "Copydays seed subset": 0.9158134243458476
   },
-  "raw_private_media_included": false,
-  "journal_correspondence_included": false
+  "manuscript_transfer_values_match_results": true,
+  "citation_version_matches_pyproject": true,
+  "citation_repository_url_present": true,
+  "author_actions_remaining": {
+    "licence_selection_required": true,
+    "repository_doi_required": true,
+    "author_metadata_confirmation_required": true
+  }
 }

@@ -13,7 +13,8 @@ nth:
   interpolation: lanczos
 evaluation:
   target_pair_fpr: 0.001
-  radii: [2, 4, 8, 12, 16, 20]
+  radii: [2, 4, 8, 12, 16]
+  hash_registry_radii: [2, 4, 8, 12, 16, 20]
   registry_sizes: [1000, 10000, 100000, 1000000]
   bootstrap_replicates: 2000
   independent_training_runs: 5
